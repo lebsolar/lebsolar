@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family:'Lato', 'Arial';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 80%;
+    display: block;
+    margin: 5% auto;
+}
+
+h1 {
+    color: #0E4BA8;
+    font-size: clamp(26px, 3vw, 34px);
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    color: #0E4BA8;
+    font-size: clamp(20px, 2.2vw, 26px);
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: clamp(16px, 1.8vw, 20px);
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: clamp(15px, 1.2vw, 18px);
+    line-height: 1.6!important;
+    text-align: justify;
+}
+
+
+
+.main-section {
+    margin-top: 10px;
+}
+
+
+
+
+@media (max-width: 900px) {
+    section {
+        width: 90%;
+    }
+}

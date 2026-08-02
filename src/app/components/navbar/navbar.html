@@ -1,0 +1,16 @@
+<nav class="navbar">
+    <a routerLink="/inicio">
+        <div class="logo">
+            <img src="assets/images/logo_lebsolar_grande.png"
+                alt="Logo Lebsolar Ingeniería" />
+        </div>
+    </a>
+    <div class="hamburger" (click)="toggleMenu()">☰</div>
+    <ul class="menu" [class.open]="menuAbierto">
+        <li><a routerLink="/inicio" (click)="menuAbierto = false">INICIO</a></li>
+        <li><a routerLink="/nosotros" (click)="menuAbierto = false">NOSOTROS</a></li>
+        <li><a routerLink="/proyectos" (click)="menuAbierto = false">PROYECTOS</a></li>
+        <li><a routerLink="/tienda" (click)="menuAbierto = false">TIENDA</a></li>
+        <li><a routerLink="/contacto" (click)="menuAbierto = false">CONTACTO</a></li>
+    </ul>
+</nav>
