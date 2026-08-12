@@ -42,3 +42,68 @@
     </div>
 
 </section>
+
+
+
+
+
+<section class="projects-section">
+
+    <div class="projects-header">
+
+        <h2>NUESTROS PROYECTOS</h2>
+
+    </div>
+
+
+    <div
+        class="projects-carousel"
+        #projectsCarousel
+    >
+
+        <button
+            type="button"
+            class="carousel-btn carousel-prev"
+            (click)="moverProyecto(-1)"
+            aria-label="Proyecto anterior"
+        >
+            &#10094;
+        </button>
+
+
+        <div
+            class="projects-window"
+            #projectsWindow
+        >
+
+            <div class="projects-track">
+
+                <article
+                    class="project-card"
+                    *ngFor="let proyecto of proyectos"
+                >
+
+                    <img
+                        [src]="proyecto.imagen"
+                        [alt]="proyecto.alt"
+                    >
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="carousel-btn carousel-next"
+            (click)="moverProyecto(1)"
+            aria-label="Siguiente proyecto"
+        >
+            &#10095;
+        </button>
+
+    </div>
+
+</section>

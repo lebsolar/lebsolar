@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './contact.css',
 })
 export class Contact {
-
+  constructor(private title: Title) {
+    this.title.setTitle('CONTACTO | LebSolar Ingeniería');
+  }
 }
