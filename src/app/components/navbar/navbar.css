@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px 30px;
-    background: #FFFFFF;
-    border-bottom: 1px solid #1E88E5;
+    background: var(--fondo-principal);
+    border-bottom: 2.5px solid var(--texto);
     position: sticky;
     top: 0;
     left: 0;
@@ -21,7 +21,7 @@
     list-style: none;
     gap: 30px;
     align-items: center;
-    color: #0D1B2A;
+    color: var(--texto);
     justify-content: center;
     margin: auto 0;
 }
@@ -34,15 +34,18 @@
 .menu a:visited {
     color: inherit;
 }
+
 .menu li {
     cursor: pointer;
     position: relative;
     font-size: clamp(15px, 2.6vw, 17.5px);
 }
+
 .menu li:hover {
     text-decoration: underline;
-    color: #1E88E5;
+    color: var(--titulo-claro);
 }
+
 .dropdown {
     position: relative;
 }
@@ -51,20 +54,21 @@
     display: none;
     font-size: 30px;
     cursor: pointer;
-    color: #0D1B2A;
+    color: var(--texto);
 }
+
 
 @media (max-width: 900px) {
     .hamburger {
         display: block;
-        color: #1E88E5;
+        color: var(--texto);
     }
 
     .menu {
         position: absolute;
         top: 70px;
         right: 0;
-        background: #FFFFFF;
+        background: var(--fondo-principal);
         flex-direction: column;
         width: 100%;
         display: none;
@@ -72,13 +76,13 @@
 
     .menu.open {
         display: flex;
-    border-top: 1px solid #1E88E5;
+        border-top: 1px solid var(--texto);
     }
 
     .menu li:nth-child(5) {
         padding-bottom: 10px;
     }
-    
+
     .menu li:nth-child(1) {
         padding-top: 10px;
     }

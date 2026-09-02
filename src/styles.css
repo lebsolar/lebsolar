@@ -1,9 +1,20 @@
+:root {
+    --titulo: #0E4BA8;
+    --titulo-claro: #1E88E5;
+    --texto: #0D1B2A;
+    --fondo-principal: #F4F6F8;
+}
+
 * {
-  font-family:'Lato', 'Arial';
+    font-family: 'Lato', 'Arial';
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F4F6F8;
 }
 
 section {
@@ -13,14 +24,14 @@ section {
 }
 
 h1 {
-    color: #0E4BA8;
+    color: var(--titulo);
     font-size: clamp(26px, 3vw, 34px);
     text-align: center;
     font-weight: bold;
 }
 
 h2 {
-    color: #0E4BA8;
+    color: var(--titulo-claro);
     font-size: clamp(20px, 2.2vw, 26px);
     text-align: center;
     font-weight: bold;
@@ -34,18 +45,13 @@ h3 {
 
 p {
     font-size: clamp(15px, 1.2vw, 18px);
-    line-height: 1.6!important;
+    line-height: 1.6 !important;
     text-align: justify;
 }
-
-
 
 .main-section {
     margin-top: 10px;
 }
-
-
-
 
 @media (max-width: 900px) {
     section {

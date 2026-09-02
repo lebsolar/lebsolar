@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   height: auto;
-  background-color: #146582;
+  background-color: #0D1B2A;
   margin-top: 20px;
 }
 
@@ -18,12 +18,12 @@ footer {
 .footer-info h1 {
   font-size: clamp(17px, 2.8vw, 20px);
   text-align: left;
-  color: #C0CBD8;
+  color: #E5E7EB;
   margin-top: 25px;
 }
 
 .footer-info span {
-  font-size:clamp(17px, 2.8vw, 20px);
+  font-size: clamp(17px, 2.8vw, 20px);
   color: #FFFFFF;
   display: inline-block;
   white-space: nowrap;
@@ -38,7 +38,7 @@ footer {
 
 .footer-info a:hover {
   text-decoration: underline;
-  color: #C0CBD8;
+  color: #E5E7EB;
 }
 
 .colum1-footer {
@@ -93,7 +93,7 @@ footer {
 .copyright {
   width: 100%;
   height: 50px;
-  border-top: solid #C0CBD8;
+  border-top: solid #E5E7EB;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,16 +104,17 @@ footer {
   height: 20px;
   text-decoration: none;
   color: #FFFFFF;
- font-size: clamp(15px, 2.6vw, 17.5px);
+  font-size: clamp(15px, 2.6vw, 17.5px);
   text-align: center !important;
 
 }
 
 
 @media (max-width: 900px) {
-  .footer{
+  .footer {
     width: 100% !important;
   }
+
   .footer-info {
     display: grid;
     grid-template-columns: 1fr;

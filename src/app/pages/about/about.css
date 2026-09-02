@@ -5,7 +5,7 @@
 }
 
 .about p {
-    color: #000000;
+    color: var(--texto);
     text-align: justify;
     line-height: 1.5;
 }
@@ -30,7 +30,7 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     display: block;
     margin: 0 auto clamp(15px, 3.5vw, 20px) auto;
-    border: 4px solid #146582;
+    border: 4px solid var(--titulo);
 }
 
 .about-card {
@@ -46,151 +46,19 @@
     right: calc(-50px);
     width: 2px;
     height: 100%;
-    background-color: #146582;
+    background-color: var(--titulo);
 }
 
 .about-card:last-child::after {
     display: none;
 }
 
-.about-card h2 {
-    font-weight: bold;
-    color: #146582;
-}
-
+ 
 .about-card p {
     text-align: justify;
-    color: #000000;
+    color: var(--texto);
     line-height: 1.5;
 }
-
-.values-grid {
-display: flex;
-flex-wrap: wrap;
-justify-content: center; /* centra las filas */
-
-    gap: clamp(20px, 4vw, 50px);
-    margin: clamp(15px, 4vw, 30px) auto;
-    max-width: 1270px;
-    border-bottom: 2px solid #146582;
-    padding-bottom: clamp(20px, 4vw, 40px);
-}
-
-.values-grid > * {
-  flex: 1 1 260px;
-  max-width: 350px;
-}
-
-.value-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-
-.value-card img {
-    width: clamp(120px, 18vw, 180px);
-    height: clamp(120px, 18vw, 180px);
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    display: block;
-    margin: auto;
-    border: 4px solid #146582;
-}
-
-.value-card h3 {
-    letter-spacing: 1px;
-    margin-top: 5px;
-    color: #146582;
-    font-weight: bold;
-}
-
-.contador-accidentes {
-    text-align: center;
-    border-radius: 12px;
-    display: block;
-    margin: auto;
-
-}
-
-.contador-accidentes p {
-    text-align: center;
-}
-
-.contador-box {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    padding: clamp(18px, 4vw, 25px) clamp(30px, 8vw, 60px);
-    border-radius: 14px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-}
-
-.contador-box span {
-    font-size: clamp(32px, 6vw, 48px);
-    font-weight: bold;
-    color: #146582;
-    line-height: 1;
-}
-
-.contador-box small {
-    margin-top: clamp(15px, 3vw, 25px);
-    color: #146582;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
-.timeline {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.timeline-step {
-    background: #F0F8FF;
-    padding: clamp(8px, 1.5vw, 14px);
-    border-radius: 14px;
-    border: 2px solid #146582;
-    transition: .25s;
-    width: 220px;
-}
-
-.timeline-step:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, .08);
-}
-
-.circle {
-    width: clamp(42px, 5vw, 54px);
-    height: clamp(42px, 5vw, 54px);
-    background: #146582;
-    color: #FFFFFF;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    margin: 0px auto 10px auto;
-    box-shadow: 0 6px 18px rgba(20, 101, 130, .25);
-}
-
-.timeline-step p {
-    margin: 0px;
-    text-align: center;
-}
-
 
 
 
@@ -206,52 +74,15 @@ justify-content: center; /* centra las filas */
 }
 
 
-
-
-
-/* =========================================
-   EQUIPO
-========================================= */
-
 .team {
     width: 100%;
-
-    padding: 80px 6%;
-
-    background: #FFFFFF;
-
+    background: var(--fondo);
     box-sizing: border-box;
 }
 
 
 /* TÍTULO */
 
-.team > h1 {
-    margin: 0 0 50px;
-
-    text-align: center;
-
-    color: #0E4BA8;
-
-    font-size: 36px;
-
-    font-weight: 800;
-}
-
-.team > h1::after {
-    content: "";
-
-    display: block;
-
-    width: 50px;
-    height: 4px;
-
-    margin: 12px auto 0;
-
-    border-radius: 10px;
-
-    background: #43A047;
-}
 
 
 /* CONTENIDO */
@@ -307,33 +138,6 @@ justify-content: center; /* centra las filas */
     max-width: 600px;
 }
 
-.team-text h2 {
-    margin: 0 0 22px;
-
-    color: #0E4BA8;
-
-    font-size: 34px;
-
-    line-height: 1.15;
-
-    font-weight: 800;
-}
-
-.team-text p {
-    margin: 0 0 18px;
-
-    color: #0D1B2A;
-
-    font-size: 18px;
-
-    line-height: 1.6;
-}
-
-
-/* =========================================
-   RESPONSIVE
-   SOLO 900 PX
-========================================= */
 
 @media (max-width: 900px) {
 
@@ -341,7 +145,7 @@ justify-content: center; /* centra las filas */
         padding: 55px 25px 65px;
     }
 
-    .team > h1 {
+    .team>h1 {
         margin-bottom: 35px;
 
         font-size: 30px;
@@ -358,20 +162,10 @@ justify-content: center; /* centra las filas */
     .team-image {
         width: min(100%, 320px);
         height: 320px;
-
         flex-basis: auto;
     }
 
     .team-text {
         max-width: 100%;
     }
-
-    .team-text h2 {
-        font-size: 28px;
-    }
-
-    .team-text p {
-        font-size: 17px;
-    }
-
 }

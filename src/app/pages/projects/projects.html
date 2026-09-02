@@ -3,14 +3,11 @@
 
   <div class="grid">
     <article class="card" *ngFor="let proyecto of proyectos">
-
-
-
       <div class="card-content" *ngIf="proyecto.titulo || proyecto.ubicacion">
         <h2 class="titulo" *ngIf="proyecto.titulo">
           {{ proyecto.titulo }}
         </h2>
-      <img [src]="proyecto.imagen" [alt]="proyecto.alt">
+        <img [src]="proyecto.imagen" [alt]="proyecto.alt">
         <span class="ubicacion" *ngIf="proyecto.ubicacion">
           {{ proyecto.ubicacion }}
         </span>

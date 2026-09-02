@@ -1,7 +1,7 @@
 :root {
   /* ===== PALETA DE COLORES ===== */
 
-  --azul-principal: #0E4BA8;
+
   --azul-claro: #1E88E5;
 
   --verde: #43A047;
@@ -10,9 +10,8 @@
   --naranja: #FFB300;
   --amarillo: #FFD54F;
 
-  --azul-oscuro: #0D1B2A;
 
-  --gris-claro: #F4F6F8;
+
   --blanco: #FFFFFF;
 
   /* ===== Colores auxiliares ===== */
