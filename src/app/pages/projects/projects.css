@@ -1,8 +1,3 @@
-.proyectos {
-  text-align: center;
-}
-
-
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +6,7 @@
 }
 
 .card {
-  background: #FFFFFF;
+  background: var(--blanco);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 18px #0f5c7559;
@@ -25,19 +20,4 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-}
-
-.titulo {
-  color: var(--azul-titulos);
-  font-weight: bold;
-  margin-top: 1%;
-}
-
-.ubicacion {
-  display: block;
-  margin: auto;
-  padding: 10px 12px 14px;
-  color: var(--azul-texto);
-  font-size: clamp(15px, 2.5vw, 18px);
-  text-align: center;
 }

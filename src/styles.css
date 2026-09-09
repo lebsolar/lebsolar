@@ -24,7 +24,7 @@ body {
 section {
     width: 80%;
     display: block;
-    margin:3% auto 0% auto;
+    margin: 3% auto 0% auto;
 }
 
 h1 {
@@ -57,6 +57,13 @@ h3 {
     font-weight: bold;
     text-align: center;
     color: var(--titulo-claro);
+}
+
+h4 {
+    font-size: clamp(17px, 1.5vw, 21px);
+    font-weight: bold;
+    text-align: center;
+    color: var(--texto);
 }
 
 p {
