@@ -21,12 +21,18 @@
 
 .info-item {
     text-align: center;
-    color: #146582;
+    color: var(--texto);
 }
 
 .info-item a {
     text-align: center;
-    color: #146582;
+    color: var(--texto);
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-align: center;
+    color: var(--titulo-claro);
     text-decoration: none;
 }
 
@@ -34,56 +40,42 @@
     display: block;
     margin: auto;
     padding: clamp(6px, 0.8vw, 10px) clamp(12px, 1.5vw, 20px);
-    background-color: #146582;
-    color: #FFFFFF;
+    background-color: var(--titulo-claro);
+    color: var(--fondo-principal);
     text-decoration: none;
     border-radius: clamp(6px, 1vw, 14px);
     transition: 0.3s ease;
     max-width: 280px;
     text-align: center;
-    border: solid 2px #146582;
+    border: solid 2px var(--titulo-claro);
 }
 
 .btn-whatsapp:hover {
-    background-color: #FFFFFF;
+    background-color: var(--fondo-principal);
     font-weight: bold;
-    color: #146582;
-
+    color: var(--titulo-claro);
 }
 
-
-
-
-
-
-
-
+.contact-form h3 {
+    color: var(--titulo);
+}
 
 .contact-form {
     flex: 1;
     display: block;
     margin: auto;
     width: 100%;
-    border-left: solid 2px #146582;
+    border-left: solid 2px var(--titulo-claro);
 }
-
-.contact-form h2 {
-    color: #146582;
-    font-weight: bold;
-    margin: clamp(15px, 4vw, 30px) auto;
-}
-
 
 .contact-form ::placeholder {
-    color: #146582;
+    color: var(--texto);
     font-size: clamp(15px, 1.2vw, 18px);
 }
-
 
 form {
     display: block;
     margin: auto;
-
 }
 
 .form-group {
@@ -91,37 +83,21 @@ form {
 
 }
 
-
-
 .form-group input {
     font-size: clamp(15px, 1.2vw, 18px);
     line-height: 1.6;
     text-align: justify;
     max-height: 35px;
-
 }
-
-.form-group select {
-    font-size: clamp(15px, 1.2vw, 18px);
-    line-height: 1.6;
-    text-align: justify;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    cursor: pointer;
-    color: #146582;
-
-}
-
 
 .form-control {
     padding: 10px;
     border-radius: 6px;
-    border: solid 2px #146582;
+    border: solid 2px var(--titulo-claro);
     max-width: 400px;
     display: block;
     margin: auto;
-    color: #146582;
+    color: var(--texto);
     font-size: clamp(15px, 1.2vw, 18px);
 }
 
@@ -129,16 +105,13 @@ textarea.form-control {
     resize: none;
     overflow: hidden;
     box-sizing: border-box;
-
 }
 
-
-
 .btn-enviar {
-    background-color: #146582;
-    color: #FFFFFF;
+    background-color: var(--titulo-claro);
+    color: var(--fondo-principal);
     padding: clamp(6px, 0.8vw, 10px) clamp(12px, 1.5vw, 20px);
-    border: solid 2px #146582;
+    border: solid 2px var(--titulo-claro);
     border-radius: 6px;
     cursor: pointer;
     min-width: 180px;
@@ -148,18 +121,17 @@ textarea.form-control {
 }
 
 .btn-enviar:hover {
-    background-color: #FFFFFF;
+    background-color: var(--fondo-principal);
     font-weight: bold;
-    color: #146582;
+    color: var(--titulo-claro);
 }
 
 .alert-success,
 .alert-error {
     text-align: center;
-    color: #146582;
+    color: var(--titulo-claro);
     font-weight: bold;
 }
-
 
 @media (max-width: 900px) {
     .contact-container {
@@ -170,13 +142,9 @@ textarea.form-control {
         margin: clamp(15px, 4vw, 30px) auto;
     }
 
-
     .contact-form {
         max-width: 600px;
         border: none;
     }
 
-    .contact-form h2 {
-        margin: clamp(15px, 4vw, 30px) auto;
-    }
 }
