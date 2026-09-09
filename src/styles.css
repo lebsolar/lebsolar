@@ -3,6 +3,10 @@
     --titulo-claro: #1E88E5;
     --texto: #0D1B2A;
     --fondo-principal: #F4F6F8;
+    --subrayado: #43A047;
+    --amarillo-sol: #FFB300;
+    --naranja-sol: #FF9800;
+    --blanco: #FFFFFF;
 }
 
 * {
@@ -20,7 +24,7 @@ body {
 section {
     width: 80%;
     display: block;
-    margin: 5% auto;
+    margin:3% auto 0% auto;
 }
 
 h1 {
@@ -31,16 +35,28 @@ h1 {
 }
 
 h2 {
-    color: var(--titulo-claro);
-    font-size: clamp(20px, 2.2vw, 26px);
+    color: var(--titulo);
+    font-size: clamp(26px, 3vw, 34px);
     text-align: center;
     font-weight: bold;
+    margin-top: 0px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin: 12px auto 18px;
+    border-radius: 10px;
+    background: #43A047;
 }
 
 h3 {
-    font-size: clamp(16px, 1.8vw, 20px);
+    font-size: clamp(20px, 1.8vw, 24px);
     font-weight: bold;
     text-align: center;
+    color: var(--titulo-claro);
 }
 
 p {

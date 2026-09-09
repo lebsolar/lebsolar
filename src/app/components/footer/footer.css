@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   height: auto;
-  background-color: #0D1B2A;
+  background-color: var(--texto);
   margin-top: 20px;
 }
 

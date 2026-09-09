@@ -1,23 +1,17 @@
 <section class="main-section">
-
     <img class="hero-bg" src="assets/images/banner-home.png" alt="Paneles solares - Lebsolar Ingeniería">
-
     <div class="hero-overlay"></div>
-
     <div class="hero-content">
-
         <div class="hero-subtitle">
             <span class="line"></span>
             <span>ENERGÍA SOLAR INTELIGENTE</span>
         </div>
-
         <h1>
             Soluciones de
             <span>energía solar</span>
             para un futuro
             sostenible.
         </h1>
-
         <p>
             Diseñamos, instalamos y legalizamos sistemas fotovoltaicos para
             proyectos residenciales, comerciales e industriales en todo el país.
@@ -32,28 +26,67 @@
             <a routerLink="/proyectos" class="btn-secondary">
                 VER PROYECTOS
             </a>
-
         </div>
-
     </div>
-
 </section>
-
-
-
-
-
-<section class="projects-section">
-
-    <div class="projects-header">
-
-        <h2>NUESTROS PROYECTOS</h2>
-
+<section class="services-section">
+    <div class="services-header">
+        <h2>SERVICIOS</h2>
     </div>
+    <div class="services-grid">
+        <article class="service-card">
+            <div class="service-icon">
+                ☀
+            </div>
+            <div class="service-line"></div>
+            <h3>
+                Instalación de sistemas
+                solares fotovoltaicos
+            </h3>
+            <p>
+                Diseñamos e instalamos sistemas solares fotovoltaicos
+                adaptados a las necesidades de cada proyecto, buscando
+                eficiencia, confiabilidad y ahorro energético.
+            </p>
+        </article>
+        <article class="service-card">
+            <div class="service-icon">
+                ⚙
+            </div>
+            <div class="service-line"></div>
+            <h3>
+                Mantenimiento de sistemas
+                fotovoltaicos
+            </h3>
+            <p>
+                Realizamos mantenimiento preventivo y correctivo para
+                conservar el rendimiento, la seguridad y la vida útil
+                de los sistemas fotovoltaicos.
+            </p>
+        </article>
+        <article class="service-card">
+            <div class="service-icon">
+                🎓
+            </div>
 
-
+            <div class="service-line"></div>
+            <h3>
+                Cursos de instalación
+                de sistemas fotovoltaicos
+            </h3>
+            <p>
+                Capacitación práctica y técnica para aprender los
+                fundamentos y las buenas prácticas de instalación
+                de sistemas solares fotovoltaicos.
+            </p>
+        </article>
+    </div>
+</section>
+<section class="projects-section">
+    <div class="projects-header">
+        <h2>PROYECTOS</h2>
+    </div>
     <div class="projects-carousel" #projectsCarousel>
-
         <button type="button" class="carousel-btn carousel-prev" (click)="moverProyecto(-1)"
             aria-label="Proyecto anterior">
             &#10094;
@@ -67,7 +100,6 @@
         </div>
         <button type="button" class="carousel-btn carousel-next" (click)="moverProyecto(1)"
             aria-label="Siguiente proyecto"> &#10095;
-
         </button>
     </div>
 </section>
