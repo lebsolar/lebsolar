@@ -289,57 +289,7 @@
     right: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*RESPONSIVE*/
 @media (max-width: 900px) {
 
     /*SECCIÓN PRINCIPAL*/
@@ -452,8 +402,11 @@
     }
 
     .project-card {
-        max-width: 400px;
+        max-width: 100%;
+        margin: auto;
+        display: block;
         box-sizing: border-box;
+        background-color: var(--fondo-principal);
     }
 
     .project-card img {
@@ -464,6 +417,7 @@
         object-fit: contain;
         object-position: center;
         display: block;
+
     }
 
     .carousel-btn {
